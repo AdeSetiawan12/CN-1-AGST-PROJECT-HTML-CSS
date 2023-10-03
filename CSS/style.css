@@ -6,6 +6,10 @@ body{
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 table{
     width: 100%;
     border-collapse: collapse;
@@ -51,7 +55,7 @@ input, textarea{
         padding: 50px 0px;
 }
 .section-title{
-    background: #121238;
+    background: #4848a9;
 }
 .section-title h1{
     color: white;
@@ -89,4 +93,55 @@ input, textarea{
 .media{
     display: flex;
     gap: 15px;
+}
+.mobile-menu-icon .list-menu{
+    display: none;
+}
+
+.mobile-menu-icon:hover .list-menu{
+    display: block;
+}
+
+@media(min-width: 1400px); {
+
+}
+
+/* Screen lebih dari 1400*/
+@media(max-width: 1400px); {
+    body{
+        background: blue;
+    }    
+}
+
+@media(max-width: 1200px); {
+    .container{
+        padding: 50px 30px;
+    }
+    
+}
+
+@media(max-width: 992px); {
+    
+}
+
+@media(max-width: 768px); {
+    .media{
+        flex-direction: column;
+    }
+    .media img,
+    .media iframe{
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px) {
+ .section-menu{
+    display: none;
+ }   
+}
+
+@media(min-width: 576px) {
+    .mobile-menu-icon{
+        display: none;
+    }
 }
